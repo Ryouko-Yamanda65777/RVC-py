@@ -27,7 +27,7 @@ convert_song --uploaded_file path/to/song.wav --voice_model voice_model_name --p
 
 ## or use python code
 
-
+```
 from rvc-py.main import song_cover_pipeline, download_models
 
 
@@ -65,4 +65,4 @@ try:
     print(f"AI cover generated successfully! Saved at: {output_path}")
 except Exception as e:
     print(f"Error during conversion: {e}")
-
+```
