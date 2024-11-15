@@ -13,6 +13,7 @@ import requests
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 RVC_MODELS_DIR = BASE_DIR / 'rvc_models'
+MODELS_DIR = BASE_DIR 
 OUTPUT_DIR = BASE_DIR / 'song_output'
 RVC_other_DOWNLOAD_LINK = 'https://huggingface.co/Politrees/RVC_resources/resolve/main/predictors/'
 RVC_hubert_DOWNLOAD_LINK = 'https://huggingface.co/Politrees/RVC_resources/resolve/main/embedders/'
@@ -31,10 +32,10 @@ def download_models():
     rvc_hubert_names = ['hubert_base.pt']
     for model in rvc_other_names:
         print(f'Downloading {model}...')
-        dl_model(RVC_other_DOWNLOAD_LINK, model, RVC_MODELS_DIR)
+        dl_model(RVC_other_DOWNLOAD_LINK, model, MODELS_DIR)
     for model in rvc_hubert_names:
         print(f'Downloading {model}...')
-        dl_model(RVC_hubert_DOWNLOAD_LINK, model, RVC_MODELS_DIR)
+        dl_model(RVC_hubert_DOWNLOAD_LINK, model, MODELS_DIR)
     print('All models downloaded!')
 
 def get_rvc_model(voice_model):
