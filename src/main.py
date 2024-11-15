@@ -8,7 +8,7 @@ import torch
 import numpy as np
 import gradio as gr
 from pathlib import Path
-from src.my_project.rvc import Config, load_hubert, get_vc, rvc_infer
+from src.rvc import Config, load_hubert, get_vc, rvc_infer
 import requests
 
 BASE_DIR = Path(__file__).resolve().parent.parent
