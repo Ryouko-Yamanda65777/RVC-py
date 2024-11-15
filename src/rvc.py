@@ -5,17 +5,16 @@ import torch
 from fairseq import checkpoint_utils
 from scipy.io import wavfile
 
-from infer_pack.models import (
+from rvc_py.infer_pack.models import (
     SynthesizerTrnMs256NSFsid,
     SynthesizerTrnMs256NSFsid_nono,
     SynthesizerTrnMs768NSFsid,
     SynthesizerTrnMs768NSFsid_nono,
 )
-from my_utils import load_audio
-from vc_infer_pipeline import VC
+from rvc_py.my_utils import load_audio
+from rvc_py.vc_infer_pipeline import VC
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-
+BASE_DIR = 'rvc_py'
 
 class Config:
     def __init__(self, device, is_half):
