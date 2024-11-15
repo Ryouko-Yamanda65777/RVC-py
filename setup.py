@@ -37,7 +37,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'download_models=my_project.main:download_models'
+            'download_models=src..main:download_models'
         ],
     },
     classifiers=[
