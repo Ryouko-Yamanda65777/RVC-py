@@ -28,7 +28,7 @@ convert_song --uploaded_file path/to/song.wav --voice_model voice_model_name --p
 ## or use python code
 
 ```
-from rvc-py.main import song_cover_pipeline, download_models
+from rvc_py.main import song_cover_pipeline, download_models
 
 
 uploaded_file = 'path/to/your/input_song.wav'  # Path to your input audio file
