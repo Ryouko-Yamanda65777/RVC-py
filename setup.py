@@ -7,8 +7,8 @@ setup(
     author=' Ryouko-Yamanda65777',
     author_email='',
     url='https://github.com/Ryouko-Yamanda65777',
-    packages=find_packages(where='src'),
-    package_dir={'': 'src'},
+    packages=find_packages(where='rvc_py'),
+    package_dir={'': 'rvc_py'},
     install_requires=[
         # Main libraries
         'requests',
