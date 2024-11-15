@@ -37,8 +37,8 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'download_models=src.main:download_models',
-            'convert_song=src.main:convert'
+            'download_models=rvc_py.main:download_models',
+            'convert_song=rvc_py.main:convert'
         ],
     },
     classifiers=[
