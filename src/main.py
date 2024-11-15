@@ -1,4 +1,4 @@
-cover_pathimport gc
+import gc
 import hashlib
 import os
 import shlex
